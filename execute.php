@@ -21,7 +21,7 @@ $text = strtolower($text);
 
 $response = "";
 
-$time = time();
+$time = mktime(ore, minuti, secondi, mese, giorno, anno);
 
 if(strpos($text, "/start") === 0)
 {
