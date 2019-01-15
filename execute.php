@@ -19,9 +19,11 @@ $text = isset($message['text']) ? $message['text'] : "";
 $text = trim($text);
 $text = strtolower($text);
 
+$response = "";
+
 $time = time();
 
-if($text == "/start")
+if(strpos($text, "/start") === 0)
 {
-	echo $time;
+	$response = "$time" ;
 }
