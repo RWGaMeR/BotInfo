@@ -21,11 +21,11 @@ $text = strtolower($text);
 
 $response = "";
 
-$time = mktime(ore, minuti, secondi, mese, giorno, anno);
+$time = time();
 
 if(strpos($text, "/start") === 0)
 {
-	$response = "$time" ;
+	$response = " Sono le $time" ;
 }
 
 header("Content-Type: application/json");
