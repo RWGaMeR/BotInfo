@@ -27,7 +27,7 @@ $time = (string)date('H:i');
 
 if(strpos($text, "/start") === 0)
 {
-	$response = " Sono le $time" ;
+	$response = " Sono le ore $time" ;
 }
 
 header("Content-Type: application/json");
