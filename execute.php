@@ -21,6 +21,8 @@ $text = strtolower($text);
 
 $response = "";
 
+date_default_timezone_set('Europe/Rome');
+
 $time = date('H:i');
 
 if(strpos($text, "/start") === 0)
