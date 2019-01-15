@@ -25,7 +25,7 @@ date_default_timezone_set('Europe/Rome');
 
 $time = date('H:i');
 
-if(strpos($time, "10:56") === 0)
+if($time == "10:58")
 {
 	$response = " Sono le $time" ;
 }
