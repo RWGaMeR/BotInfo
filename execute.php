@@ -21,7 +21,7 @@ $text = strtolower($text);
 
 $response = "";
 
-$time = time();
+$time = time('Europe/Rome');
 
 if(strpos($text, "/start") === 0)
 {
