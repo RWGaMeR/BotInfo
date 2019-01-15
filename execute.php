@@ -25,7 +25,7 @@ date_default_timezone_set('Europe/Rome');
 
 $time = (string)date('H:i');
 
-if(strpos($text, "/start") === 0)
+if(strpos($text, "/orario") === 0)
 {
 	$response = " Sono le ore $time" ;
 }
