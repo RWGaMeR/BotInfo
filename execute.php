@@ -24,10 +24,19 @@ $response = "";
 date_default_timezone_set('Europe/Rome');
 
 $time = (string)date('H:i');
+$date = (string)date("d/m/y");
 
 if(strpos($text, "/orario") === 0)
 {
 	$response = " Sono le ore $time" ;
+}
+elseif(strpos($text, "/data") === 0)
+{
+	$response = " Sono le ore $date" ;
+}
+elseif(strpos($text, "/infogruppo") === 0)
+{
+	$response = "Questo messaggio è per chi si  sta approcciando o si è appena approcciato a HA, ecco alcuni link che vi saranno utili:\nhttps://www.home-assistant.io/\nhttps://www.itchsblog.it/\nhttps://www.vincenzocaputo.com/\nhttps://www.youtube.com/channel/UC-_QPzJhqFr1p5oNljRPRDA\nhttps://www.topdigamma.it/\nhttps://community.home-assistant.io/\nhttps://www.reddit.com/r/homeassistant/\nQuesto è il gruppo facebook: https://www.facebook.com/groups/950587105117248/\nSe volete potete usare questa sintassi così non dovete scrivere tutta la parola ogni volta\nGHM= Google Home Mini\nGH= Google Home\nGA= Google Assistant\nHA= Home Assistant\nhttps://docs.google.com/spreadsheets/d/1Uz4qpKliFS8H8Nj0jADZlwHesEdbLQLfbuKmcTGmjpE/edit?usp=drivesdk" ;
 }
 
 header("Content-Type: application/json");
